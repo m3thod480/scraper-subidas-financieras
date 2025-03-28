@@ -45,7 +45,7 @@ column_names = ["Fecha", "Simbolo", "Nombre", "Precio", "Cambio", "Volumen"]
 
 df = pd.DataFrame(saved_data, columns=column_names)
 
-path = "./mejores_subidas"
+path = os.path.abspath("./mejores_subidas")
 
 if not os.path.exists(path):
     print(f"Creando carpeta en: {path}")
