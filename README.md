@@ -64,10 +64,7 @@ pip install -r requirements.txt
     
 
 ## Ejemplo de resultado
-```
-![Ejemplo de csv](./example1.png)
-
-```
+![Ejemplo de csv](example1.png)
 ## Notas y consideraciones
     
 -   La estructura de la página web puede cambiar en el futuro. Si eso ocurre, es posible que sea necesario actualizar el código de scraping.
