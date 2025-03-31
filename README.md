@@ -13,19 +13,16 @@ Script que realiza web scraping a la sección de acciones en crecimiento de Yaho
 
 ## Funcionamiento
 
-1. **Obtención de datos**:  
-   Se realiza una petición HTTP a la página de Yahoo Finance, obteniendo el HTML de la sección de subidas.
+1.  Se realiza una petición HTTP a la página de Yahoo Finance, obteniendo el HTML de la sección de subidas.
 
-2. **Extracción y procesamiento**:  
-   Se utiliza BeautifulSoup para buscar las filas de la tabla con información. Cada fila se procesa para extraer:
+2. Se utiliza BeautifulSoup para buscar las filas de la tabla con información. Cada fila se procesa para extraer:
    - Símbolo de la acción.
    - Nombre de la compañía.
    - Precio actual.
    - Cambio porcentual o absoluto.
    - Volumen de operaciones (con conversión en caso de abreviaturas).
 
-3. **Almacenamiento**:  
-   Se crea (si no existe) una carpeta llamada `mejores_subidas` y se guarda un archivo CSV con nombre `subidas_acciones_YYYY-MM-DD.csv` que contiene todos los datos extraídos.
+3. Se crea (si no existe) una carpeta llamada `mejores_subidas` y se guarda un archivo CSV con nombre `subidas_acciones_YYYY-MM-DD.csv` que contiene todos los datos extraídos.
 
 ## Instalación y uso
 ### Requisitos
